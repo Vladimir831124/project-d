@@ -1,0 +1,73 @@
+@import '../variables';
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: $GrayscaleBlack;
+  margin-top: 40px;
+  &__logo {
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 170%;
+  }
+}
+.nav {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 600px;
+  &__item {
+    &_button {
+      color: #fff;
+      padding: 14px 32px;
+      background: $PrimaryBlue100;
+    }
+    &__image {
+      display: none;
+    }
+  }
+}
+
+
+@media screen and (max-width: 1279px) and (min-width: 768px) {
+  .header {
+    &__logo {
+      font-size: 20px;
+    }
+  }
+  .nav {
+    width: 480px;
+    &__item {
+      font-size: 14px;
+      &:first-child {
+        display: none;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .header {
+    margin-top: 15px;
+    &__logo {
+      font-size: 20px;
+    }
+  }
+  .nav {
+    width: auto;
+    &__item {
+      padding: 12px 20px;
+      &:not(:last-child) {
+        display: none;
+      }
+      span {
+        display: none;
+      }
+      &__image {
+        display: block;
+      }
+    }
+  }
+  
+}

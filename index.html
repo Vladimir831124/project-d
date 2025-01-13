@@ -1,20 +1,74 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.min.css">
-    <title>Document</title>
-    <style>
-        *{
-    font-family: "Montserrat";
-}
-    </style>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.min.css">
+  <link rel="stylesheet" href="css/header.min.css">
+  <link rel="stylesheet" href="css/hero.min.css">
+  <title>БК “Ясенево” | Главная</title>
 </head>
 <body>
-    <a href="location.html">Расположение</a>
-    <a href="plans.html">Планировки</a>
-    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Necessitatibus veritatis aliquam ipsum sunt ratione tempora totam natus velit consequuntur laudantium et facere exercitationem adipisci quos reiciendis dolorem est perspiciatis, blanditiis error fuga deserunt? Illum tempore ad vitae temporibus praesentium dolorem cum, sint tempora explicabo? Beatae ea iure blanditiis culpa quia eaque corrupti rerum eveniet sequi, neque aliquid tempore magnam voluptas consequuntur necessitatibus, itaque consequatur placeat! Placeat est illo, quisquam maxime nesciunt soluta modi error commodi deleniti quia nostrum doloribus distinctio assumenda sit mollitia? Non, voluptas! Ex ipsum eaque corporis iure voluptates natus dolorem. Accusantium ex sequi officia optio, laborum repellat sed consequatur dolorum quibusdam repudiandae beatae, error molestiae adipisci recusandae voluptate quaerat, nemo ab vero harum excepturi et facere! Beatae modi error eius nihil dignissimos amet obcaecati commodi ad fuga quo quam earum illo eveniet aut eum saepe rem, impedit hic. Placeat iure error perferendis molestias ea eos dicta enim?
+  <div class="wrapper">
+    <header>
+      <div class="container">
+        <div class="header">
+          <a href="index.html" class="header__logo">БК “Ясенево”</a>
+          <nav>
+            <ul class="nav">
+              <li class="nav__item"><a href="index.html">Главная</a></li>
+              <li class="nav__item"><a href="location.html">Расположение</a></li>
+              <li class="nav__item"><a href="plans.html">Планировки</a></li>
+              <li class="nav__item nav__item_button">
+                <a href="tel:+74952214022">
+                  <span>+7 (495) 221-40-22</span>
+                  <img class="nav__item__image" src="assets/images/phone.png" alt="">
+                </a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+    <main>
+      <div class="container">
+        <section class="hero">
+          <h1 class="hero__title">Офисы класса “А” в бизнес-квартале “Ясенево”</h1>
+          <div class="hero__parametrs hero__parametrs_large">
+            <div class="hero__parametrs__item">
+              <span><strong>1 мин</strong></span>
+              <span>пешком от метро</span>
+            </div>
+            <div class="hero__parametrs__item">
+              <span><strong>от 60 м²</strong></span>
+              <span>помещения под офисы</span>
+            </div>
+            <div class="hero__parametrs__item">
+              <span><strong>2024 г.</strong></span>
+              <span>первая очередь</span>
+            </div>
+          </div>
+          <img class="hero__image" src="assets/images/Mask_group-1.png" alt="Бизнес квартал">
+          <nav>
+            <ul class="nav hero-nav">
+              <li class="nav__item nav__item_button"><a href="location.html">Расположение</a></li>
+              <li class="nav__item nav__item_button"><a href="plans.html">Планировки</a></li>
+            </ul>
+          </nav>
+        </section>
+        <section class="pdf">
+          <h2 class="pdf__title">Вся информация о проекте — в презентации</h2>
+          <ul>
+            <li>25 слайдов подробной информации</li>
+            <li>Инфраструктура, благоустройство, расположение</li>
+            <li>Инжененрия, концепция и тд.</li>
+          </ul>
+          <a href="/assets/Obrazets-polnogo-dizai-n-proekta.pdf" class="pdf__link pdf__link_button">Скачать презентацию</a>
+          <img src="assets/images/image 7.png" alt="" class="pdf__image">
+        </section>
+      </div>
+    </main>
+  </div>
 </body>
 </html>
