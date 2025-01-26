@@ -1,0 +1,26 @@
+.plans{
+    &__title_g{
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 150%;
+        max-width: 760px;
+        color: #000;
+        margin-bottom: 43px;
+    
+         &::after {
+           position: absolute;
+           content:'';
+           top: 1363px;
+           left:900px;
+           width: 1080px;
+           height: 1px;
+           background: #000;
+          }
+
+    display: grid;
+    padding-top: 100px;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows:1fr 1fr;
+    gap:10px; 
+        }
+}

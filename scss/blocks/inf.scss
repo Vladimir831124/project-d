@@ -1,1 +1,53 @@
 @import "../variables";
+.inf{
+    padding: 5px 0;
+    position: relative;
+    
+  &__img{
+          display: grid;
+          justify-content: center;
+          column-gap: 20px;
+          row-gap: 10px;
+          grid-template-columns:[one] 1fr [two] 1fr [three] 1fr [four] 1fr [five];
+          grid-template-rows:[one] 1fr [two] 1fr [three];
+  }
+   
+  &__title_g{
+     font-weight: 500;
+     font-size: 16px;
+     line-height: 150%;
+     max-width: 760px;
+     color: #000;
+     margin-bottom: 43px;
+ 
+      &::after {
+        position: absolute;
+        content:'';
+        top:15px;
+        left:133px;
+        width:479px;
+        height: 2px;
+        background: #000;
+       }
+    } 
+    &__h2 {
+        font-weight: 600;
+        font-size: 37px;
+        line-height: 150%;
+        max-width: 760px;
+        color: #000;
+        margin-top: 43px; 
+    }
+}
+ .el__4{
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 3;
+ }
+ .el__1{
+  grid-column-start:1;
+  grid-column-end: 3;
+  grid-row-start: 1;
+  grid-row-end: 2;
+}
