@@ -1,6 +1,75 @@
 @import '../variables';
-footer{
-    // width: 1410px;
-     height: 471px;
-    background-color:$PrimaryBlue100 ;
+.footer{
+        position: relative;
+        height: auto;
+        background-color:$PrimaryBlue100 ;
+        display: grid;
+        justify-content:space-around;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto auto;
+        &__h2{
+            position: relative;
+            margin-bottom: 42px;
+            font-weight: 600;
+            font-size: 35px;
+            line-height: 150%;
+            max-width: 760px;
+            left: 579px;
+            color:$PrimaryWhite100;
+            margin-top: 53px; 
+        } 
+        
+        &__logo {
+            position: relative;
+                font-weight:300;
+                font-size: 32px;
+                line-height: 170%;
+                color: $PrimaryWhite100;
+                left: 577px;
+                margin-top:163px ;
+                margin-bottom: 1px;
+              }
+        &__nam {
+                position: relative;
+                    font-weight:300;
+                    font-size: 32px;
+                    line-height: 170%;
+                    color: $PrimaryWhite100;
+                    left: 145px;
+                    margin-top:163px ;
+                    margin-bottom: 1px;
+                  }
+}
+
+.form{
+   display: grid;
+   position: relative;
+   background: $PrimaryBlue100;
+   left: 134px;
+   grid-template-columns: 503px;
+   grid-template-rows: 50px 59px 0px 59px 59px;
+   gap: 10px;   
+   justify-content:start;
+  
+   
+}
+.button_3{
+    width: 329px;
+    height: 50px;
+    position: relative;
+    background: $PrimaryWhite100;
+    color: $PrimaryBlue100;
+    left:0px;
+}
+ #name{
+background: $PrimaryBlue100;
+font-weight: 700;
+font-size: 25px;
+border-color: $PrimaryWhite100;
+}
+#num{
+    background: $PrimaryBlue100;
+    font-weight: 700;
+    font-size: 25px;
+    border-color: $PrimaryWhite100; 
 }
