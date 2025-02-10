@@ -1,6 +1,7 @@
 @import '../variables';
 .footer{
         position: relative;
+        width: 3000px;
         height: auto;
         background-color:$PrimaryBlue100 ;
         display: grid;
@@ -14,7 +15,7 @@
             font-size: 35px;
             line-height: 150%;
             max-width: 760px;
-            left: 579px;
+            left: 659px;
             color:$PrimaryWhite100;
             margin-top: 53px; 
         } 
@@ -25,9 +26,9 @@
                 font-size: 32px;
                 line-height: 170%;
                 color: $PrimaryWhite100;
-                left: 577px;
+                left: 659px;
                 margin-top:163px ;
-                margin-bottom: 1px;
+                margin-bottom: 25px;
               }
         &__nam {
                 position: relative;
@@ -35,17 +36,17 @@
                     font-size: 32px;
                     line-height: 170%;
                     color: $PrimaryWhite100;
-                    left: 145px;
+                    left: 0px;
                     margin-top:163px ;
-                    margin-bottom: 1px;
+                    margin-bottom: 25px;
                   }
 }
 
-.form{
+.footer__form{
    display: grid;
    position: relative;
    background: $PrimaryBlue100;
-   left: 134px;
+   left: 0px;
    grid-template-columns: 503px;
    grid-template-rows: 50px 59px 0px 59px 59px;
    gap: 10px;   
@@ -73,3 +74,181 @@ border-color: $PrimaryWhite100;
     font-size: 25px;
     border-color: $PrimaryWhite100; 
 }
+@media screen and (max-width: 1279px) and (min-width: 768px){
+    
+    .footer{
+        
+        position: relative;
+        width:1279px;
+        height: auto;
+        background-color:$PrimaryBlue100 ;
+        display: grid;
+        justify-content:space-around;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+        &__h2{
+            display: inherit;
+            position: relative;
+            margin-bottom: 42px;
+            font-weight: 600;
+            font-size: 35px;
+            line-height: 150%;
+            max-width: 576px;
+            left: 47px;
+            color:$PrimaryWhite100;
+            margin-top: 53px; 
+            grid-column-start: 1;
+            grid-column-end: 3;
+            grid-row-start: 1;
+            grid-row-end: 2;
+        } 
+        &__form{
+            display: grid;
+            position: relative;
+            background: $PrimaryBlue100;
+            left: 39px;
+            grid-template-columns:721px;
+            grid-template-rows: 50px 59px 0px 59px 59px;
+            gap: 10px;   
+            justify-content:start;
+            grid-column-start: 1;
+            grid-column-end: 2;
+            grid-row-start: 2;
+            grid-row-end: 3;
+}
+        &__logo {
+            position: relative;
+                font-weight:300;
+                font-size: 32px;
+                line-height: 170%;
+                color: $PrimaryWhite100;
+                left: 91px;
+                margin-top:163px ;
+                margin-bottom: 25px;
+                grid-column-start: 1;
+                grid-column-end: 2;
+                grid-row-start: 3;
+                grid-row-end: 4;
+              }
+        &__nam {
+                position: relative;
+                    font-weight:300;
+                    font-size: 32px;
+                    line-height: 170%;
+                    color: $PrimaryWhite100;
+                    left: 115px;
+                    margin-top:163px ;
+                    margin-bottom: 25px;
+                    grid-column-start:2 ;
+                    grid-column-end: 3;
+                    grid-row-start: 3;
+                    grid-row-end: 4;
+                  }
+                  
+}
+
+
+}
+.button_3{
+    width: 329px;
+    height: 50px;
+    position: relative;
+    background: $PrimaryWhite100;
+    color: $PrimaryBlue100;
+    left:0px;
+}
+ #name{
+background: $PrimaryBlue100;
+font-weight: 700;
+font-size: 25px;
+border-color: $PrimaryWhite100;
+}
+#num{
+    background: $PrimaryBlue100;
+    font-weight: 700;
+    font-size: 25px;
+    border-color: $PrimaryWhite100; 
+}
+
+@media screen and (max-width: 767px){
+    
+    .footer{
+        
+        position: relative;
+        width: 416px;
+        height: auto;
+        background-color:$PrimaryBlue100 ;
+        display: grid;
+        justify-content:space-around;
+        grid-template-columns: 1fr ;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+        &__h2{
+            
+            position: relative;
+            margin-bottom: 42px;
+            font-weight: 600;
+            font-size: 20px;
+            line-height: 120%;
+            max-width: 370px;
+            left: 10px;
+            color:$PrimaryWhite100;
+            margin-top: 53px; 
+        } 
+        
+        &__logo {
+            position: relative;
+                font-weight:300;
+                font-size: 32px;
+                line-height: 170%;
+                color: $PrimaryWhite100;
+                left: 10px;
+                margin-top:163px ;
+                margin-bottom: 2px;
+              }
+        &__nam {
+                    display: inherit;
+                    position: relative;
+                    font-weight:300;
+                    font-size: 32px;
+                    line-height: 170%;
+                    color: $PrimaryWhite100;
+                    left: 0px;
+                    margin-top:16px ;
+                    margin-bottom: 5px;
+                  }
+        &__form{
+                    display: grid;
+                    position: relative;
+                    background: $PrimaryBlue100;
+                    left: 10px;
+                    grid-template-columns:330px;
+                    grid-template-rows: 50px 59px 0px 59px 59px;
+                    gap: 10px;   
+                    justify-content:start;
+}
+
+    }
+.button_3{
+    width: 243px;
+    height: 50px;
+    position: relative;
+    background: $PrimaryWhite100;
+    color: $PrimaryBlue100;
+    left:0px;
+}
+ 
+}
+#name{
+    background: $PrimaryBlue100;
+    font-weight: 700;
+    font-size: 18px;
+    border-color: $PrimaryWhite100;
+    color: #eadddd;
+    }
+    #num{
+        background: $PrimaryBlue100;
+        font-weight: 700;
+        font-size: 18px;
+        border-color: $PrimaryWhite100;
+        color: #f9eeee;
+    }

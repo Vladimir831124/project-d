@@ -2,6 +2,11 @@
 .map{
     padding-top: 0px;
     padding-bottom: 0px;
+   
+    &_obj{
+        width:1440px;
+        height:825px;
+    }
     &__title_p{
         display: inline-block;
         position: relative;
@@ -36,4 +41,93 @@
 
     }
     
+}
+@media screen and (max-width: 1279px) and (min-width: 768px){
+    .map{
+        padding-top: 0px;
+        padding-bottom: 0px;
+        &_obj{
+            width:834px;
+            height:574px;
+        }
+        &__title_p{
+            display: inline-block;
+            position: relative;
+            font-weight: 400;
+            font-size:18px ;
+            line-height: 160%;
+            width: 653px;
+            max-width: 634px;
+            left: 0px;
+            color: $Grayscale50;
+            text-align: left;
+            padding-bottom: 75px;
+        }
+        &__title_g{
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 150%;
+            max-width: 760px;
+            color: $GrayscaleBlack;
+            margin-bottom: 43px;
+        
+             &::after {
+               display: inline-block;
+               position: relative;
+               content:'';
+               top:0px;
+               left:25px;
+               width: 913px;
+               height: 1px;
+               background: #000;
+              }
+    
+        }
+        
+    }
+}
+@media screen and (max-width: 767px){
+    .map{
+        padding-top: 0px;
+        padding-bottom: 0px;
+        &_obj{
+            width:375px;
+            height:500px;
+        }
+        &__title_p{
+            display: inline-block;
+            position: relative;
+            font-weight: 400;
+            font-size:18px ;
+            line-height: 160%;
+            width: 653px;
+            max-width: 634px;
+            left: 0px;
+            color: $Grayscale50;
+            text-align: left;
+            padding-bottom: 75px;
+        }
+        &__title_g{
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 150%;
+            max-width: 760px;
+            color: $GrayscaleBlack;
+            margin-bottom: 43px;
+        
+             &::after {
+               display: inline-block;
+               position: relative;
+               content:'';
+               top:0px;
+               left:25px;
+               width: 913px;
+               height: 1px;
+               background: #000;
+              }
+    
+        }
+        
+    }
+
 }

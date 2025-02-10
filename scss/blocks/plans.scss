@@ -1,3 +1,18 @@
+@import "../variables";
+.p_title{
+    font-weight: 500;
+    font-size: 16px;
+    color: #000;
+    &::after {
+        position: absolute;
+        content:'';
+        top:1507px;
+        left:913px;
+        width:1097px;
+        height: 1px;
+        background: #000;
+       }
+}
 .plans{
     display: grid;
     padding-top: 10px;
@@ -5,20 +20,7 @@
     grid-template-rows:1fr 1fr;
     gap:15px;
     align-items: baseline;
-    &__title{
-        font-weight: 500;
-        font-size: 16px;
-        color: #000;
-        &::after {
-            position: absolute;
-            content:'';
-            top:1507px;
-            left:913px;
-            width: 1097px;
-            height: 1px;
-            background: #000;
-           }
-    }
+    
 }
 .button_4{
     width: 175px;
@@ -42,4 +44,100 @@
 strong{
    font-weight: 500;
    font-size: 31px; 
+}
+@media screen and (max-width: 1279px) and (min-width: 768px){
+    .p_title{
+        font-weight: 500;
+        font-size: 16px;
+        color: #000;
+        &::after {
+            position: absolute;
+            content:'';
+            top:1243px;
+            left:152px;
+            width:1037px;
+            height: 1px;
+            background: #000;
+           }
+    }
+    .plans{
+        display: grid;
+        padding-top: 10px;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows:1fr 1fr 1fr;
+        gap:15px;
+        align-items: baseline;
+        
+    }
+    .button_4{
+        width: 175px;
+        height: 50px;
+        position: relative;
+        background: $PrimaryBlue100;
+        color:$PrimaryWhite100;
+        left:0px;
+    }
+    .p2_1{
+        position: relative;
+        font-weight: 400;
+        font-size:18px ;
+        line-height: 160%;
+        max-width: 634px;
+        left: 5px;
+        color: $Grayscale50;
+        padding-top: 11px;
+        padding-bottom:11px ;
+    }
+    strong{
+       font-weight: 500;
+       font-size: 31px; 
+    }
+}
+@media screen and (max-width: 767px){
+    .p_title{
+        font-weight: 500;
+        font-size: 16px;
+        color: #000;
+        &::after {
+            position: absolute;
+            content:'';
+            top:1040px;
+            left:113px;
+            width: 325px;
+            height: 1px;
+            background: #000;
+           }
+    }
+    .plans{
+        display: grid;
+        padding-top: 10px;
+        grid-template-columns: 1fr ;
+        grid-template-rows:1fr 1fr 1fr 1fr 1fr;
+        gap:15px;
+        align-items: baseline;
+        
+    }
+    .button_4{
+        width: 175px;
+        height: 50px;
+        position: relative;
+        background: $PrimaryBlue100;
+        color:$PrimaryWhite100;
+        left:0px;
+    }
+    .p2_1{
+        position: relative;
+        font-weight: 400;
+        font-size:16px ;
+        line-height: 160%;
+        max-width: 301px;
+        left: 5px;
+        color: $Grayscale50;
+        padding-top: 11px;
+        padding-bottom:11px ;
+    }
+    strong{
+       font-weight: 500;
+       font-size: 31px; 
+    }
 }
