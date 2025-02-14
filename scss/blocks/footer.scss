@@ -1,5 +1,6 @@
 @import '../variables';
 .footer{
+
         position: relative;
         width: 3000px;
         height: auto;
@@ -15,7 +16,7 @@
             font-size: 35px;
             line-height: 150%;
             max-width: 760px;
-            left: 659px;
+            left: 0px;
             color:$PrimaryWhite100;
             margin-top: 53px; 
         } 
@@ -26,7 +27,7 @@
                 font-size: 32px;
                 line-height: 170%;
                 color: $PrimaryWhite100;
-                left: 659px;
+                left: 0px;
                 margin-top:163px ;
                 margin-bottom: 25px;
               }
